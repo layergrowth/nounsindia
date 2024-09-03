@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&display=swap');
+
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFCC42; /* Updated background color */
+    color: #842B24; /* Updated text color */
+    font-family: 'Space Grotesk', Arial, sans-serif;
+    text-align: center;
+    overflow: hidden;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 90%;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 10vw; /* Start with a size relative to viewport width */
+    margin-bottom: 20px;
+    line-height: 1.49; /* Line height for better readability */
+}
+
+.highlight {
+    color: #842B24; /* Updated highlight color */
+}
+
+button {
+    background: none;
+    border: 2px solid #842B24; /* Button border color */
+    border-radius: 25px;
+    color: #842B24; /* Button text color */
+    padding: 10px 20px;
+    margin: 20px 0 0;
+    font-size: 4vw; /* Relative to viewport width */
+    font-family: 'Space Grotesk', Arial, sans-serif;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+button:hover {
+    background-color: #842B24;
+    color: #FFCC42;
+}
+
+.typewriter {
+    display: inline-block;
+    overflow: hidden; /* Ensures the cursor does not overflow */
+    white-space: nowrap; /* Prevents text wrapping */
+    border-right: 0.15em solid #842B24; /* Blinking cursor color */
+    animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: #842B24; } /* Blinking cursor color */
+}
+
+@media(min-width: 768px) {
+    h1 {
+        font-size: 8vw; /* Adjust font size for larger screens */
+    }
+
+    button {
+        font-size: 2vw; /* Adjust button size for larger screens */
+    }
+}
+
+@media(min-width: 1024px) {
+    h1 {
+        font-size: 6vw; /* Further adjustment for even larger screens */
+    }
+
+    button {
+        font-size: 1.5vw; /* Further adjustment for even larger screens */
+    }
+}
